@@ -1,17 +1,19 @@
-float x;
+
 
 void setup () {
-  x += 1
+  size(600,600);
 }
 
 
 void draw () {
-  println (convertmeterstokilom);
+  println (convertmeterstokilom(50));
   
 }
 
 
-void convertmeterstokilom () {
-  x *= 1000;
+float convertmeterstokilom (float x) {
+  float result = x*1000;
+  return result;
+  
 }
   
